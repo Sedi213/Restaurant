@@ -3,13 +3,15 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-fetch-data',
-  templateUrl: './fetch-data.component.html'
+  templateUrl: './fetch-data.component.html',
+  styleUrls: ['./fetch-data.component.css']
 })
 export class FetchDataComponent {
-  public listitems: PriceAble[] = [];
-  public burgerlist: PriceAble[]=[];
-  public saladlist: PriceAble[]=[];
-  public drinklist: PriceAble[]=[];
+   listitems: PriceAble[] = [];
+   burgerlist: PriceAble[]=[];
+   saladlist: PriceAble[]=[];
+   drinklist: PriceAble[]=[];
+  orderlist: PriceAble[]=[];
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<PriceAble[]>(baseUrl + 'order').subscribe(result => {
       this.listitems = result;
@@ -18,6 +20,12 @@ export class FetchDataComponent {
     }, error => console.error(error));
   }
 
+ NewMember(item:PriceAble){
+  this.orderlist.push(item);
+}
+DeleteMember(item:PriceAble){
+ this.orderlist.splice( this.orderlist.indexOf(item),1);
+}
   private splitlist():void{
     this.listitems.forEach(item=>{
         switch(item.category){

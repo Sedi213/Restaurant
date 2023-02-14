@@ -1,0 +1,10 @@
+html,body{
+   background-image: url('./Images/back.jpg');
+ min-height: 100vh;   
+}
+
+
+.main{
+    background-color: white;
+    border-radius:20px ;
+}
