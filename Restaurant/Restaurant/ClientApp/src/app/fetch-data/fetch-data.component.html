@@ -1,0 +1,17 @@
+<h1 id="tableLabel">Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!listitems?.length"><em>Loading...</em></p>
+<div *ngIf="listitems.length">
+  <div *ngFor="let item of burgerlist">
+    <button>{{item.name}}</button>
+  </div>
+  <div *ngFor="let item of saladlist">
+    <button>{{item.name}}</button>
+  </div>
+  <div *ngFor="let item of drinklist">
+    <button>{{item.name}}</button>
+  </div>
+</div>
+
