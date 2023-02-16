@@ -1,0 +1,51 @@
+.card {
+  display: inline;
+  text-align: top;
+  justify-content: top;
+}
+.deletebtn {
+  margin-left: 7px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid rgb(231, 50, 50);
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.deletebtn:hover {
+  background-color: rgb(245, 207, 207);
+  transform: scale(1.2);
+  box-shadow: 0 0 4px #111;
+  transition: 0.3s;
+}
+.deletesvg {
+  color: rgb(231, 50, 50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.plus-btn {
+  background-image: url(../Images/checked-success-svgrepo-com.svg);
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.minus-btn {
+  background-image: url(../Images/minus-substract-svgrepo-com.svg);
+  height: 30px;
+  width: 30px;
+
+  background-size: contain;
+  background-color: transparent;
+  margin: 5px;
+}

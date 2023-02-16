@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
-import { SmoothHeightAnimDirective } from './smooth/smooth.component';
+import { SmoothHeightAnimDirective } from './animationDirective/smooth.derictive';
+import { CartOrderComponent } from './cart-order/cart-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { SmoothHeightAnimDirective } from './smooth/smooth.component';
     HomeComponent,
     FetchDataComponent,
     OpenCloseComponent,
-    SmoothHeightAnimDirective
+    SmoothHeightAnimDirective,
+    CartOrderComponent
     
   ],
   imports: [

@@ -1,5 +1,5 @@
 html,body{
-   background-image: url('./Images/back.jpg');
+   background-image: url('./Images/back.jpg') ;
  min-height: 100vh;   
 }
 
