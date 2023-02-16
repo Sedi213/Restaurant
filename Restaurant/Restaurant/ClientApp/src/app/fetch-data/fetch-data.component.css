@@ -1,4 +1,8 @@
-
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {   
+    stroke: #0CC20C;
+    height: 50px;
+    width: 50px;
+}
 .main{
     width: 100%;
     display: flex;

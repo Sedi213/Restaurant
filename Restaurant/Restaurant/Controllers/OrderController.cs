@@ -12,13 +12,14 @@ namespace Restaurant.Controllers
         [HttpGet]
         public IEnumerable<PriceAble> GetCurenntPrice()
         {
+         
             return Demonstation.demonstations;
         }
 
         [HttpPost]
         public int GetPayment(IEnumerable<PriceAble> list)
         {
-            return list.Sum(p=>p.Price);
+            return list.Sum(p => p.Price);
         }
     }
 }

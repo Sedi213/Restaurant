@@ -1,10 +1,11 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { smoothHeight } from '../smooth/animation';
 @Component({
   selector: 'app-fetch-data',
   templateUrl: './fetch-data.component.html',
-  styleUrls: ['./fetch-data.component.css']
+  styleUrls: ['./fetch-data.component.css'],
+  animations: [smoothHeight]
 })
 export class FetchDataComponent {
    listitems: PriceAble[] = [];
